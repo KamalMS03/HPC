@@ -16,3 +16,19 @@ Develop a parallel implementation of Simpson's rule to achieve significant speed
 | 10000                          | 1.8896                                  | 0.28119                                   |
 | 100000                         | 6.60008                                 | 2.19155                                   |
 | 1000000                        | 47.008                                  | 20.524                                    |
+
+
+### To run sequntial.cpp code
+
+  ```bash
+  g++ sequntial.cpp -o seq
+  ./seq
+  ```
+
+### To run gpu.cu code
+
+```bash
+sudo apt install nvidia-cuda-toolkit
+nvcc gpu.cu -o gpu1 -lcuda -lcudart -std=c++11
+./gpu1
+```
